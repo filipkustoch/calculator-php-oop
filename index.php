@@ -13,14 +13,14 @@ include 'includes/class-autoload.inc.php';
 </head>
 
 <body>
-    <form action="includes/calc.inc.php">
+    <form action="includes/calc.inc.php" method="POST">
         <p>Calculator</p>
         <input type="number" name="num1" placeholder="First number">
         <select name="operator">
-            <option value="add">Addition</option>
-            <option value="sub">Substraction</option>
-            <option value="div">Division</option>
-            <option value="mul">Multiplication</option>
+            <option value="+">Addition</option>
+            <option value="-">Substraction</option>
+            <option value="/">Division</option>
+            <option value="*">Multiplication</option>
         </select>
         <input type="number" name="num2" placeholder="Second number">
         <button type="submit" name="submit">Calculate</button>
